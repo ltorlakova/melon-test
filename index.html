@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="initial-scale=1.0" />
+<meta name="viewport" content="width=device-width" />
+<title>Melon Project</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/custom_select.js"></script>
+<script type="text/javascript" src="js/accordion.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+<body>
+<div id="container">
+<header id="header">
+	<div class="wrapper clearfix">
+    	<h1 id="logo" class="sprite" ><a href="#" title="whoiswho">Whoiswho</a></h1>
+        <div class="user_info">
+        	<span class="user_icon sprite">&nbsp;</span>
+            <a href="#">Ivan Ivanov</a>
+            <span class="logout_icon sprite">&nbsp;</span>
+            <a href="#">Logout</a>
+        </div>
+    </div>
+	<nav id="nav">
+		<div class="wrapper">
+			<ul class="clearfix">
+				<li><a href="#tab_content1"  class="tab_header">Office map</a></li>
+				<li><a href="#tab_content2"  class="tab_header">My Profile</a></li>
+				<li><a href="#tab_content3"  class="tab_header active">Projects</a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+	<div id="body">
+		
+		<div id="content">
+			<div class="wrapper">
+				<div id="tab_content1" class="tabs">Office map content</div>
+				<div id="tab_content2" class="tabs">My Profile content</div>
+				<div id="tab_content3" class="tabs clearfix">
+					<form action="#">
+						<input type="text" id="proj_name" placeholder="Project Name" />
+						<input type="text" id="client" placeholder="Client" />
+						<select id="custom_select">
+							<option value="1">Option 1</option>
+							<option value="2">Option 2</option>
+							<option value="3">Option 3</option>
+						</select>
+						<input type="submit" value="Search" id="search" />
+					</form>
+					
+					<div class="accordion" id="projects_accordion">
+						<article>
+							<h3 class="acc_heading">Project Name 1<span class="edit_icon sprite">&nbsp;</span><span class="close_icon sprite">&nbsp;</span><span class="arrow_down_icon sprite">&nbsp;</span></h3>
+							<div class="acc_content">
+								<dl>
+									<dt><strong>Description:</strong></dt>
+									<dd><p>Lorem ipsum dolor sit amet, consectetur adipisicing</p></dd>
+									<dt><strong>Client:</strong></dt>
+									<dd><p>Daniel Tomov</p><p>Start date: <time datetime="2012-07-21">21.07.2012</time>   End date: <time  datetime="2012-08-10">10.08.2012</time></p></dd>
+									<dt><strong>Status:</strong></dt>
+									<dd><p>Finished</p></dd>
+									<dt><strong>Members:</strong></dt>
+									<dd>
+										<p>Ivan Ivanov / <a href="mailto:ivanov@melontech.com" title="ivanov@melontech.com">ivanov@melontech.com</a></p>
+										<p>Ivan Ivanov/ <a href="mailto:inov@melontech.com" title="inov@melontech.com">inov@melontech.com</a></p>
+									</dd>
+								</dl>
+
+							</div>
+						</article>
+						<article>
+							<h3 class="acc_heading">Project Name 2<span class="edit_icon sprite">&nbsp;</span><span class="close_icon sprite">&nbsp;</span><span class="arrow_down_icon sprite">&nbsp;</span></h3>
+							<div class="acc_content">Project Name 2</div>
+						</article>
+						<article>
+							<h3 class="acc_heading">Project Name 3<span class="edit_icon sprite">&nbsp;</span><span class="close_icon sprite">&nbsp;</span><span class="arrow_down_icon sprite">&nbsp;</span></h3>
+							<div class="acc_content">Project Name 3</div>
+						</article>
+						<article>
+							<h3 class="acc_heading">Project Name 4<span class="edit_icon sprite">&nbsp;</span><span class="close_icon sprite">&nbsp;</span><span class="arrow_down_icon sprite">&nbsp;</span></h3>
+							<div class="acc_content">Project Name 4</div>
+						</article>
+						<article>
+							<h3 class="acc_heading">Project Name 5<span class="edit_icon sprite">&nbsp;</span><span class="close_icon sprite">&nbsp;</span><span class="arrow_down_icon sprite">&nbsp;</span></h3>
+							<div class="acc_content">Project Name 5</div>
+						</article>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer id="footer">
+		<span class="footer_logo sprite"></span>
+	</footer>
+</div>
+</body>
